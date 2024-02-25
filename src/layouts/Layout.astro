@@ -17,8 +17,8 @@ const { title, description, noSeo = false } = Astro.props
 		<title>
 			{
 				title
-					? `${title} | Defense Against Diabetes`
-					: "Defense Against Diabetes | U.P. Lions Serve"
+					? `${title} | Diabetes Awareness And Action`
+					: "Diabetes Awareness And Action | U.P. Lions Serve"
 			}
 		</title>
 		<meta name="description" content={description} />
@@ -40,12 +40,12 @@ const { title, description, noSeo = false } = Astro.props
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="/defense-against-diabetes/media/favicon/logo32.png"
+			href="/diabetes-awareness-and-action/media/favicon/logo32.png"
 		/>
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="/defense-against-diabetes/media/favicon/logo180.png"
+			href="/diabetes-awareness-and-action/media/favicon/logo180.png"
 		/>
 
 		<!-- Font initialization -->
@@ -66,112 +66,112 @@ const { title, description, noSeo = false } = Astro.props
 			<nav class="dadExtra dadMenuIcon">
 				<div id="extraIcon">
 					<img
-						src="/defense-against-diabetes/media/menu/color_extra.svg"
+						src="/diabetes-awareness-and-action/media/menu/color_extra.svg"
 					/>
 					<img
-						src="/defense-against-diabetes/media/menu/dark_extra.svg"
+						src="/diabetes-awareness-and-action/media/menu/dark_extra.svg"
 					/>
 				</div>
 			</nav>
 			<nav class="mobileDadMenu">
-				<a href="/defense-against-diabetes/">
+				<a href="/diabetes-awareness-and-action/">
 					<div class="mobileDadMenuIcon dadMenuIcon">
 						<img
-							src="/defense-against-diabetes/media/menu/color_awareness.svg"
+							src="/diabetes-awareness-and-action/media/menu/color_awareness.svg"
 						/>
 						{
 							title && (
-								<img src="/defense-against-diabetes/media/menu/dark_awareness.svg" />
+								<img src="/diabetes-awareness-and-action/media/menu/dark_awareness.svg" />
 							)
 						}
 					</div>
 				</a>
-				<a href="/defense-against-diabetes/education">
+				<a href="/diabetes-awareness-and-action/education">
 					<div class="mobileDadMenuIcon dadMenuIcon">
 						<img
-							src="/defense-against-diabetes/media/menu/color_education.svg"
+							src="/diabetes-awareness-and-action/media/menu/color_education.svg"
 						/>
 						{
 							title != "Education" && (
-								<img src="/defense-against-diabetes/media/menu/dark_education.svg" />
+								<img src="/diabetes-awareness-and-action/media/menu/dark_education.svg" />
 							)
 						}
 					</div>
 				</a>
-				<a href="/defense-against-diabetes/prevention">
+				<a href="/diabetes-awareness-and-action/prevention">
 					<div class="mobileDadMenuIcon dadMenuIcon">
 						<img
-							src="/defense-against-diabetes/media/menu/color_prevention.svg"
+							src="/diabetes-awareness-and-action/media/menu/color_prevention.svg"
 						/>
 						{
 							title != "Prevention" && (
-								<img src="/defense-against-diabetes/media/menu/dark_prevention.svg" />
+								<img src="/diabetes-awareness-and-action/media/menu/dark_prevention.svg" />
 							)
 						}
 					</div>
 				</a>
-				<a href="/defense-against-diabetes/self-management"></a>
+				<a href="/diabetes-awareness-and-action/self-management"></a>
 				<div class="mobileDadMenuIcon dadMenuIcon">
 					<img
-						src="/defense-against-diabetes/media/menu/color_management.svg"
+						src="/diabetes-awareness-and-action/media/menu/color_management.svg"
 					/>
 					{
 						title != "Self-Management" && (
-							<img src="/defense-against-diabetes/media/menu/dark_management.svg" />
+							<img src="/diabetes-awareness-and-action/media/menu/dark_management.svg" />
 						)
 					}
 				</div>
 			</nav>
 		</header>
 		<nav class="mobileDadFullMenu">
-			<a href="/defense-against-diabetes/"
+			<a href="/diabetes-awareness-and-action/"
 				><div class="websiteIconBox dadMenuIcon">
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/color_awareness.svg"
+						src="/diabetes-awareness-and-action/media/menu/color_awareness.svg"
 					/>
 					<h1 class={!title ? "activePage" : ""}>awareness</h1>
 				</div></a
 			>
-			<a href="/defense-against-diabetes/education"
+			<a href="/diabetes-awareness-and-action/education"
 				><div class="websiteIconBox dadMenuIcon">
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/color_education.svg"
+						src="/diabetes-awareness-and-action/media/menu/color_education.svg"
 					/>
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/dark_education.svg"
+						src="/diabetes-awareness-and-action/media/menu/dark_education.svg"
 					/>
 					<h1 class={title == "Education" ? "activePage" : ""}>
 						education
 					</h1>
 				</div></a
 			>
-			<a href="/defense-against-diabetes/prevention"
+			<a href="/diabetes-awareness-and-action/prevention"
 				><div class="websiteIconBox dadMenuIcon">
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/color_prevention.svg"
+						src="/diabetes-awareness-and-action/media/menu/color_prevention.svg"
 					/>
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/dark_prevention.svg"
+						src="/diabetes-awareness-and-action/media/menu/dark_prevention.svg"
 					/>
 					<h1 class={title == "Prevention" ? "activePage" : ""}>
 						prevention
 					</h1>
 				</div></a
 			>
-			<a href="/defense-against-diabetes/management"
+			<a href="/diabetes-awareness-and-action/management"
 				><div class="websiteIconBox dadMenuIcon">
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/color_management.svg"
+						src="/diabetes-awareness-and-action/media/menu/color_management.svg"
 					/>
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/dark_management.svg"
+						src="/diabetes-awareness-and-action/media/menu/dark_management.svg"
 					/>
 					<h1 class={title == "Self-Management" ? "activePage" : ""}>
 						self-management
@@ -184,7 +184,7 @@ const { title, description, noSeo = false } = Astro.props
 				><div class="websiteIconBox dadMenuIcon">
 					<img
 						class="websiteIcon"
-						src="/defense-against-diabetes/media/menu/color_coin.svg"
+						src="/diabetes-awareness-and-action/media/menu/color_coin.svg"
 					/>
 					<h1><span class="colorb">donate</span></h1>
 				</div></a
@@ -193,32 +193,32 @@ const { title, description, noSeo = false } = Astro.props
 				<a href="https://facebook.com/uplionsserve" target="_blank"
 					><img
 						class="socialIcon"
-						src="/defense-against-diabetes/media/menu/social_facebook.png"
+						src="/diabetes-awareness-and-action/media/menu/social_facebook.png"
 					/></a
 				>
 				<a href="https://instagram.com/uplionsserve" target="_blank"
 					><img
 						class="socialIcon"
-						src="/defense-against-diabetes/media/menu/social_instagram.png"
+						src="/diabetes-awareness-and-action/media/menu/social_instagram.png"
 					/></a
 				>
 				<img
 					id="socialZoom"
 					class="socialIcon zoomIcon"
-					src="/defense-against-diabetes/media/menu/social_zoom.png"
+					src="/diabetes-awareness-and-action/media/menu/social_zoom.png"
 				/>
 			</div>
 		</nav>
 		<nav class="desktopDadMenu">
-			<a class="desktopDadMenuIcon" href="/defense-against-diabetes/"
+			<a class="desktopDadMenuIcon" href="/diabetes-awareness-and-action/"
 				><div class="desktopDadMenuIcon dadMenuIcon">
 					<div>
 						<img
-							src="/defense-against-diabetes/media/menu/color_awareness.svg"
+							src="/diabetes-awareness-and-action/media/menu/color_awareness.svg"
 						/>
 						{
 							title && (
-								<img src="/defense-against-diabetes/media/menu/dark_awareness.svg" />
+								<img src="/diabetes-awareness-and-action/media/menu/dark_awareness.svg" />
 							)
 						}
 					</div>
@@ -227,15 +227,15 @@ const { title, description, noSeo = false } = Astro.props
 			>
 			<a
 				class="desktopDadMenuIcon"
-				href="/defense-against-diabetes/education"
+				href="/diabetes-awareness-and-action/education"
 				><div class="desktopDadMenuIcon dadMenuIcon">
 					<div>
 						<img
-							src="/defense-against-diabetes/media/menu/color_education.svg"
+							src="/diabetes-awareness-and-action/media/menu/color_education.svg"
 						/>
 						{
 							title != "Education" && (
-								<img src="/defense-against-diabetes/media/menu/dark_education.svg" />
+								<img src="/diabetes-awareness-and-action/media/menu/dark_education.svg" />
 							)
 						}
 					</div>
@@ -246,15 +246,15 @@ const { title, description, noSeo = false } = Astro.props
 			>
 			<a
 				class="desktopDadMenuIcon"
-				href="/defense-against-diabetes/prevention"
+				href="/diabetes-awareness-and-action/prevention"
 				><div class="desktopDadMenuIcon dadMenuIcon">
 					<div>
 						<img
-							src="/defense-against-diabetes/media/menu/color_prevention.svg"
+							src="/diabetes-awareness-and-action/media/menu/color_prevention.svg"
 						/>
 						{
 							title != "Prevention" && (
-								<img src="/defense-against-diabetes/media/menu/dark_prevention.svg" />
+								<img src="/diabetes-awareness-and-action/media/menu/dark_prevention.svg" />
 							)
 						}
 					</div>
@@ -265,15 +265,15 @@ const { title, description, noSeo = false } = Astro.props
 			>
 			<a
 				class="desktopDadMenuIcon"
-				href="/defense-against-diabetes/self-management"
+				href="/diabetes-awareness-and-action/self-management"
 				><div class="desktopDadMenuIcon dadMenuIcon">
 					<div>
 						<img
-							src="/defense-against-diabetes/media/menu/color_management.svg"
+							src="/diabetes-awareness-and-action/media/menu/color_management.svg"
 						/>
 						{
 							title != "Self-Management" && (
-								<img src="/defense-against-diabetes/media/menu/dark_management.svg" />
+								<img src="/diabetes-awareness-and-action/media/menu/dark_management.svg" />
 							)
 						}
 					</div>
@@ -285,30 +285,30 @@ const { title, description, noSeo = false } = Astro.props
 			<div class="logoBox">
 				<img
 					class="desktopLogo"
-					src="/defense-against-diabetes/media/brand/logo.svg"
+					src="/diabetes-awareness-and-action/media/brand/logo.svg"
 				/>
 				<img
 					class="desktopLogo logoBack"
-					src="/defense-against-diabetes/media/brand/logo-back.svg"
+					src="/diabetes-awareness-and-action/media/brand/logo-back.svg"
 				/>
 			</div>
 			<div class="socialIconBox">
 				<a href="https://facebook.com/uplionsserve" target="_blank"
 					><img
 						class="socialIcon"
-						src="/defense-against-diabetes/media/menu/social_facebook.png"
+						src="/diabetes-awareness-and-action/media/menu/social_facebook.png"
 					/></a
 				>
 				<a href="https://instagram.com/uplionsserve" target="_blank"
 					><img
 						class="socialIcon"
-						src="/defense-against-diabetes/media/menu/social_instagram.png"
+						src="/diabetes-awareness-and-action/media/menu/social_instagram.png"
 					/></a
 				>
 				<img
 					id="socialZoom"
 					class="socialIcon zoomIcon"
-					src="/defense-against-diabetes/media/menu/social_zoom.png"
+					src="/diabetes-awareness-and-action/media/menu/social_zoom.png"
 				/>
 			</div>
 			<div class="desktopDonateText">
@@ -326,15 +326,15 @@ const { title, description, noSeo = false } = Astro.props
 				<p>All donations are tax deductible!</p>
 			</div>
 		</nav>
-		<p class="mobileLogoText">defense against diabetes</p>
+		<p class="mobileLogoText">diabetes awareness and action</p>
 		<div class="logoBox">
 			<img
 				class="mobileLogo"
-				src="/defense-against-diabetes/media/brand/logo.svg"
+				src="/diabetes-awareness-and-action/media/brand/logo.svg"
 			/>
 			<img
 				class="mobileLogo logoBack"
-				src="/defense-against-diabetes/media/brand/logo-back.svg"
+				src="/diabetes-awareness-and-action/media/brand/logo-back.svg"
 			/>
 		</div>
 	</body>
@@ -345,7 +345,7 @@ const { title, description, noSeo = false } = Astro.props
 
 	<img
 		class="footerTab"
-		src="/defense-against-diabetes/media/footer/footerTab.svg"
+		src="/diabetes-awareness-and-action/media/footer/footerTab.svg"
 	/>
 	<footer class="dadFeet">
 		<section class="dadGlobalCauses">
@@ -364,13 +364,13 @@ const { title, description, noSeo = false } = Astro.props
 				href="https://www.lionsclubs.org/en/explore-our-clubs/our-global-causes"
 				><img
 					class="globalCausesImg"
-					src="/defense-against-diabetes/media/footer/causes.svg"
+					src="/diabetes-awareness-and-action/media/footer/causes.svg"
 					alt="The Lions Club International causes (Hunger, Vision, Diabetes, Childhood Cancer, Environment)."
 				/></a
 			>
 			<img
 				class="flagPlanetImg"
-				src="/defense-against-diabetes/media/footer/planet.png"
+				src="/diabetes-awareness-and-action/media/footer/planet.png"
 				alt="A depiction of a planet adorned by the flags of many nations."
 			/>
 		</section>
@@ -386,9 +386,9 @@ const { title, description, noSeo = false } = Astro.props
 				<hr class="dadInfoHr1" />
 				<div class="dadInfoHeader">
 					<img
-						src="/defense-against-diabetes/media/brand/logo_glowing.svg"
+						src="/diabetes-awareness-and-action/media/brand/logo_glowing.svg"
 					/>
-					<p>DEFENSE AGAINST DIABETES</p>
+					<p>DIABETES AWARENESS AND ACTION</p>
 				</div>
 				<div class="dadInfoContact">
 					<hr />
@@ -401,13 +401,13 @@ const { title, description, noSeo = false } = Astro.props
 					<div class="contactButtonsBox">
 						<div id="ContactZoom" class="contactButton">
 							<img
-								src="/defense-against-diabetes/media/footer/contact/contact-zoom.svg"
+								src="/diabetes-awareness-and-action/media/footer/contact/contact-zoom.svg"
 								alt="Zoom logo"
 							/>
 						</div>
 						<div id="ContactEmail" class="contactButton">
 							<img
-								src="/defense-against-diabetes/media/footer/contact/contact-email.svg"
+								src="/diabetes-awareness-and-action/media/footer/contact/contact-email.svg"
 								alt="Email icon"
 							/>
 						</div>
@@ -422,13 +422,13 @@ const { title, description, noSeo = false } = Astro.props
 					<a href="https://www.district10lions.org/" target="_blank"
 						><img
 							class="d10LionsLogoImg"
-							src="/defense-against-diabetes/media/brand/d10lionslogo.png"
+							src="/diabetes-awareness-and-action/media/brand/d10lionslogo.png"
 						/></a
 					>
 					<a href="https://www.lionsclubs.org/en" target="_blank"
 						><img
 							class="lionsLogoImg"
-							src="/defense-against-diabetes/media/brand/lionslogo.png"
+							src="/diabetes-awareness-and-action/media/brand/lionslogo.png"
 						/></a
 					>
 				</div>
@@ -436,12 +436,12 @@ const { title, description, noSeo = false } = Astro.props
 				<div class="dadClaimers">
 					<a
 						class="button"
-						href="/defense-against-diabetes/references.html"
+						href="/diabetes-awareness-and-action/references.html"
 						>References</a
 					>
 					<a
 						class="button"
-						href="/defense-against-diabetes/disclaimer.html"
+						href="/diabetes-awareness-and-action/disclaimer.html"
 						>Disclaimer</a
 					>
 					<a
@@ -463,7 +463,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="UPDon"
-									src="/defense-against-diabetes/media/footer/partners/UPDon/UPDonlogo.jpg"
+									src="/diabetes-awareness-and-action/media/footer/partners/UPDon/UPDonlogo.jpg"
 									alt="U.P. Diabetes Outreach Network logo"
 								/>
 							</div></a
@@ -472,7 +472,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="UPCap"
-									src="/defense-against-diabetes/media/footer/partners/UPCap/UPCaplogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/UPCap/UPCaplogo.png"
 									alt="U.P. Commission for Area Progress logo"
 								/>
 							</div></a
@@ -483,7 +483,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="MSUExt"
-									src="/defense-against-diabetes/media/footer/partners/MSUExt/MSUExtlogo.jpg"
+									src="/diabetes-awareness-and-action/media/footer/partners/MSUExt/MSUExtlogo.jpg"
 									alt="Michigan State University Extension logo"
 								/>
 							</div></a
@@ -492,7 +492,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="NMURural"
-									src="/defense-against-diabetes/media/footer/partners/NMURural/NMURurallogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/NMURural/NMURurallogo.png"
 									alt="Northern Michigan University Center for Rural Health logo"
 								/>
 							</div></a
@@ -503,7 +503,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="KIDFound"
-									src="/defense-against-diabetes/media/footer/partners/KIDFound/KIDFoundlogo.jpeg"
+									src="/diabetes-awareness-and-action/media/footer/partners/KIDFound/KIDFoundlogo.jpeg"
 									alt="National Kidney Foudation logo"
 								/>
 							</div></a
@@ -514,7 +514,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="TCHealth"
-									src="/defense-against-diabetes/media/footer/partners/TCHealth/TCHealthlogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/TCHealth/TCHealthlogo.png"
 									alt="Tai Chi for Health logo"
 								/>
 							</div></a
@@ -523,7 +523,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="MTech"
-									src="/defense-against-diabetes/media/footer/partners/MTech/MTechlogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/MTech/MTechlogo.png"
 									alt="Michigan Tech logo"
 								/>
 							</div></a
@@ -534,7 +534,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="Lifestyle906"
-									src="/defense-against-diabetes/media/footer/partners/906Lifestyle/906Lifestylelogo.jpg"
+									src="/diabetes-awareness-and-action/media/footer/partners/906Lifestyle/906Lifestylelogo.jpg"
 									alt="Lifestyle 906 logo"
 								/>
 							</div></a
@@ -543,7 +543,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="WNMUpbs"
-									src="/defense-against-diabetes/media/footer/partners/WNMUpbs/WNMUpbslogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/WNMUpbs/WNMUpbslogo.png"
 									alt="WNMU PBS logo"
 								/>
 							</div></a
@@ -554,7 +554,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="ADCES"
-									src="/defense-against-diabetes/media/footer/partners/ADCES/ADCESlogo.jpeg"
+									src="/diabetes-awareness-and-action/media/footer/partners/ADCES/ADCESlogo.jpeg"
 									alt="Association of Diabetes Care & Education Specialists logo"
 								/>
 							</div></a
@@ -563,7 +563,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="Zoom"
-									src="/defense-against-diabetes/media/footer/partners/Zoom/Zoomlogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/Zoom/Zoomlogo.png"
 									alt="Zoom logo"
 								/>
 							</div></a
@@ -574,7 +574,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="SHF"
-									src="/defense-against-diabetes/media/footer/partners/SHF/SHFlogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/SHF/SHFlogo.png"
 									alt="Superior Health Foundation logo"
 								/>
 							</div></a
@@ -585,7 +585,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="tdyEh"
-									src="/defense-against-diabetes/media/footer/partners/tdyEh/tdyEhlogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/tdyEh/tdyEhlogo.png"
 									alt="Tour Da Yoop, Eh logo"
 								/>
 							</div></a
@@ -596,7 +596,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="cotYooper"
-									src="/defense-against-diabetes/media/footer/partners/cotYooper/cotYooperlogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/cotYooper/cotYooperlogo.png"
 									alt="Call of the Yooper logo"
 								/>
 							</div></a
@@ -605,7 +605,7 @@ const { title, description, noSeo = false } = Astro.props
 							><div>
 								<img
 									id="cc"
-									src="/defense-against-diabetes/media/footer/partners/cc/cclogo.png"
+									src="/diabetes-awareness-and-action/media/footer/partners/cc/cclogo.png"
 									alt="U.P. Lions Serve: Childhood Cancer project logo"
 								/>
 							</div></a
@@ -617,12 +617,12 @@ const { title, description, noSeo = false } = Astro.props
 				<div class="dadClaimers">
 					<a
 						class="button"
-						href="/defense-against-diabetes/references.html"
+						href="/diabetes-awareness-and-action/references.html"
 						>References</a
 					>
 					<a
 						class="button"
-						href="/defense-against-diabetes/disclaimer.html"
+						href="/diabetes-awareness-and-action/disclaimer.html"
 						>Disclaimer</a
 					>
 					<a
@@ -833,7 +833,7 @@ const { title, description, noSeo = false } = Astro.props
 		</section>
 	</footer>
 	<script
-		src="/defense-against-diabetes/assets/libraries/anime.min.js"
+		src="/diabetes-awareness-and-action/assets/libraries/anime.min.js"
 		is:inline></script>
 
 	<script>

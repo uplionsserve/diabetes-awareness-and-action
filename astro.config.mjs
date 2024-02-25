@@ -6,7 +6,7 @@ import vue from "@astrojs/vue"
 export default defineConfig({
 	integrations: [vue()],
 	site: "https://uplionsserve.org",
-	base: "/defense-against-diabetes",
+	base: "/diabetes-awareness-and-action",
 	output: "static",
-	outDir: "dist/defense-against-diabetes"
+	outDir: "dist/diabetes-awareness-and-action"
 })

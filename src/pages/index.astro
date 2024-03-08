@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets"
 import Layout from "../layouts/Layout.astro"
+import daaLogoGlowing from "../assets/branding/logo-daa-color-glowing.svg"
 ---
 
 <Layout
@@ -35,8 +37,8 @@ import Layout from "../layouts/Layout.astro"
 	</section>
 	<section class="dadMission">
 		<div class="missionLogo">
-			<img
-				src="/diabetes-awareness-and-action/media/brand/logo_glowing.svg"
+			<Image
+				src={daaLogoGlowing}
 				alt="Diabetes Awareness And Action logo"
 			/>
 			<h1>DIABETES AWARENESS AND ACTION</h1>

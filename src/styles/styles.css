@@ -218,7 +218,7 @@ p.activePage {
 }
 
 .activeLogoBack {
-	transform: rotate3d(0, 1, 0, 0deg) !important;
+	transform: rotate3d(0, 1, 0, 0deg) scale(1.25) !important;
 
 	cursor: pointer;
 }
@@ -321,23 +321,31 @@ p.activePage {
 	position: fixed;
 	width: 80px;
 	right: -240px;
-	top: 50px;
+	top: -55px;
 
 	transition: transform 0.5s;
 }
 
 .logoBack.mobileLogo,
 .logoBack.desktopLogo {
-	transform: rotate3d(0, 1, 0, 90deg);
+	transform: rotate3d(0, 1, 0, 90deg) scale(1.25);
 
 	transition: transform 0.25s !important;
+}
+
+.logoBack.mobileLogo {
+	top: 8px;
+}
+
+.logoBack.desktopLogo {
+	top: -39px;
 }
 
 .mobileLogoText {
 	z-index: 100;
 	display: block;
 	position: fixed;
-	right: -240px;
+	right: -300px;
 	top: 20px;
 
 	font-size: 1.3em;
@@ -422,7 +430,7 @@ li::before {
 .dadBod {
 	background-color: var(--a);
 	font-family: var(--fonta);
-	background-image: url("/defense-against-diabetes/media/body/bg_bubbles.png");
+	background-image: url("/diabetes-awareness-and-action/media/body/bg_bubbles.png");
 	background-position: center;
 	background-size: cover;
 }
@@ -598,7 +606,7 @@ li::before {
 	height: 125px;
 	top: 130px;
 
-	background: url("/defense-against-diabetes/media/awareness/introbg.png")
+	background: url("/diabetes-awareness-and-action/media/awareness/introbg.png")
 		no-repeat;
 	background-size: 100%;
 }
@@ -674,7 +682,7 @@ li::before {
 }
 
 .missionLogo h1 {
-	margin: -20px 0 20px;
+	margin: 0 0 20px;
 	text-align: center;
 
 	font-size: 1.6em;
@@ -737,7 +745,7 @@ li::before {
 	justify-content: center;
 	align-items: center;
 
-	background: url("/defense-against-diabetes/media/awareness/missionpresidentialvideo-bg.svg")
+	background: url("/diabetes-awareness-and-action/media/awareness/missionpresidentialvideo-bg.svg")
 		no-repeat center;
 }
 
@@ -798,7 +806,7 @@ li::before {
 .bigPictureBox {
 	width: 230px;
 
-	background: url("/defense-against-diabetes/media/awareness/bigPicture/boxBg.svg")
+	background: url("/diabetes-awareness-and-action/media/awareness/bigPicture/boxBg.svg")
 		no-repeat;
 }
 
@@ -991,13 +999,13 @@ li::before {
 }
 
 #Flyer2019 {
-	background: url("/defense-against-diabetes/media/awareness/flyer2019.jpg")
+	background: url("/diabetes-awareness-and-action/media/awareness/flyer2019.jpg")
 		no-repeat;
 	background-size: cover;
 }
 
 #Flyer2020 {
-	background: url("/defense-against-diabetes/media/awareness/flyer2020.jpg")
+	background: url("/diabetes-awareness-and-action/media/awareness/flyer2020.jpg")
 		no-repeat;
 	background-size: cover;
 }
@@ -1153,7 +1161,7 @@ li::before {
 	height: 70vw;
 	margin: auto;
 
-	background: url("/defense-against-diabetes/media/management/wheel/wheelBg.svg");
+	background: url("/diabetes-awareness-and-action/media/management/wheel/wheelBg.svg");
 }
 
 .wellnessWheelBox img {
@@ -1641,12 +1649,12 @@ h2.inactive {
 }
 
 .plus {
-	background: url("/defense-against-diabetes/media/awareness/ourSolution/plus.svg")
+	background: url("/diabetes-awareness-and-action/media/awareness/ourSolution/plus.svg")
 		no-repeat;
 }
 
 .equals {
-	background: url("/defense-against-diabetes/media/awareness/ourSolution/equals.svg")
+	background: url("/diabetes-awareness-and-action/media/awareness/ourSolution/equals.svg")
 		no-repeat;
 }
 
@@ -1805,7 +1813,7 @@ h2.inactive {
 	height: 345px;
 	margin: auto;
 
-	background: url("/defense-against-diabetes/media/education/complications.svg")
+	background: url("/diabetes-awareness-and-action/media/education/complications.svg")
 		no-repeat;
 	background-size: 100%;
 }
@@ -2738,7 +2746,7 @@ h2.inactive {
 
 		flex-flow: row wrap;
 
-		background: url("/defense-against-diabetes/media/menu/desktopMenuBg.svg")
+		background: url("/diabetes-awareness-and-action/media/menu/desktopMenuBg.svg")
 			no-repeat;
 	}
 
@@ -2813,7 +2821,7 @@ h2.inactive {
 	.desktopLogo {
 		position: absolute;
 		width: 70px;
-		top: 12px;
+		top: -100px;
 		right: 178px;
 
 		transition:
@@ -3883,8 +3891,13 @@ h2.inactive {
 
 	.desktopLogo {
 		width: 90px;
-		top: 14px;
+		top: -90px;
 		right: 220.5px;
+	}
+
+	.logoBack.mobileLogo,
+	.logoBack.desktopLogo {
+		top: -29px;
 	}
 
 	.desktopDadMenu .socialIconBox {
@@ -4121,7 +4134,7 @@ h2.inactive {
 	.wellnessWheelBox {
 		display: inline-block;
 
-		background: url("/defense-against-diabetes/media/management/wheel/wheelBg.svg");
+		background: url("/diabetes-awareness-and-action/media/management/wheel/wheelBg.svg");
 	}
 
 	.wellnessInfo {

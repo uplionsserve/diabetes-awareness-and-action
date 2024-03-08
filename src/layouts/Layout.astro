@@ -1,5 +1,8 @@
 ---
+import { Image } from "astro:assets"
 import "../styles/styles.css"
+import daaLogo from "../assets/branding/logo-daa-color.svg"
+import daaLogoGlowing from "../assets/branding/logo-daa-color-glowing.svg"
 
 interface Props {
 	title?: string
@@ -283,13 +286,11 @@ const { title, description, noSeo = false } = Astro.props
 				</div></a
 			>
 			<div class="logoBox">
-				<img
-					class="desktopLogo"
-					src="/diabetes-awareness-and-action/media/brand/logo.svg"
-				/>
-				<img
+				<Image class="desktopLogo" src={daaLogo} alt="" />
+				<Image
 					class="desktopLogo logoBack"
-					src="/diabetes-awareness-and-action/media/brand/logo-back.svg"
+					src={daaLogoGlowing}
+					alt=""
 				/>
 			</div>
 			<div class="socialIconBox">
@@ -328,14 +329,8 @@ const { title, description, noSeo = false } = Astro.props
 		</nav>
 		<p class="mobileLogoText">diabetes awareness and action</p>
 		<div class="logoBox">
-			<img
-				class="mobileLogo"
-				src="/diabetes-awareness-and-action/media/brand/logo.svg"
-			/>
-			<img
-				class="mobileLogo logoBack"
-				src="/diabetes-awareness-and-action/media/brand/logo-back.svg"
-			/>
+			<Image class="mobileLogo" src={daaLogo} alt="" />
+			<Image class="mobileLogo logoBack" src={daaLogoGlowing} alt="" />
 		</div>
 	</body>
 
@@ -385,10 +380,8 @@ const { title, description, noSeo = false } = Astro.props
 			<section class="dadInfo">
 				<hr class="dadInfoHr1" />
 				<div class="dadInfoHeader">
-					<img
-						src="/diabetes-awareness-and-action/media/brand/logo_glowing.svg"
-					/>
-					<p>DIABETES AWARENESS AND ACTION</p>
+					<Image src={daaLogoGlowing} alt="" />
+					<h2>DIABETES AWARENESS AND ACTION</h2>
 				</div>
 				<div class="dadInfoContact">
 					<hr />

@@ -62,7 +62,22 @@ const { title, description, noSeo = false } = Astro.props
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Sanchez:wght@400"
 		/>
-	</head>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-7PNP9VN2K9"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag("js", new Date())
+
+			gtag("config", "G-7PNP9VN2K9")
+		</script></head
+	>
+
+	<!-- Google tag (gtag.js) -->
 
 	<body class="dadBod">
 		<header id="top" class="dadHead">

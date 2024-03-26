@@ -3,5 +3,5 @@
 	"tabWidth": 4,
 	"semi": false,
 	"trailingComma": "none",
-	"plugins": ["prettier-plugin-astro", "prettier-plugin-vue"]
+	"plugins": ["prettier-plugin-astro"]
 }

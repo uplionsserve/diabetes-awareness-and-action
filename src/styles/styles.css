@@ -430,7 +430,6 @@ li::before {
 .dadBod {
 	background-color: var(--a);
 	font-family: var(--fonta);
-	background-image: url("/diabetes-awareness-and-action/media/body/bg_bubbles.png");
 	background-position: center;
 	background-size: cover;
 }
@@ -570,20 +569,18 @@ li::before {
 /* 360px || Module: Intro swimmer */
 
 .intro {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	width: 100% !important;
-	height: 340px;
-}
-
-.intro h1,
-.intro h2 {
-	display: block;
-	text-align: center;
-	margin: 0 auto 10px;
 }
 
 .intro h1 {
+	display: block;
+
 	width: 90%;
+	margin: 0 auto 16px;
+
+	text-align: center;
 
 	font-size: 1.5em;
 	line-height: 1.2em;
@@ -591,54 +588,34 @@ li::before {
 	font-weight: 500 !important;
 }
 
-.intro h2 {
-	width: 80%;
+.intro > p {
+	padding: 0 24px;
+
+	text-align: center;
 
 	font-size: 0.9em;
 	font-family: var(--fonta);
 	font-weight: 600;
 }
 
-#introBg {
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 125px;
-	top: 130px;
-
-	background: url("/diabetes-awareness-and-action/media/awareness/introbg.png")
-		no-repeat;
-	background-size: 100%;
-}
-
-#introFg {
-	z-index: 0;
-	display: block;
-	position: absolute;
-	width: 100%;
-	top: 150px;
-}
-
 .toolkit {
-	z-index: 0;
-	display: block;
+	display: flex;
+	margin: 24px auto;
 	position: relative;
-	width: 305px;
-	top: 36vw;
+	z-index: 0;
 
-	margin: auto;
-	background-color: red;
+	justify-content: center;
+	align-items: center;
 
 	transition: 0.2s;
 }
 
 .toolkit p {
 	display: inline-block;
-	position: absolute;
 	width: 180px;
-	margin-top: 24px;
-	padding: 9px 0px 9px 20px;
-	left: 10px;
+	height: fit-content;
+	padding: 12px;
+	margin-right: -12px;
 
 	font-size: 80%;
 	font-weight: 600;
@@ -648,14 +625,13 @@ li::before {
 
 .toolkit div {
 	display: inline-block;
-	position: absolute;
-	width: 30%;
+	width: 120px;
 	height: auto;
 	right: 10px;
 	overflow-x: hidden;
 
 	background-color: white;
-	border-radius: 60px;
+	border-radius: 100%;
 }
 
 .toolkit img {
@@ -672,7 +648,13 @@ li::before {
 /* 360px || Module: Mission Statement */
 
 .dadMission {
-	margin-bottom: 50px !important  ;
+	max-width: 600px;
+	margin: 0 auto 50px !important  ;
+	padding: 0 12px;
+}
+
+.missionLogo {
+	padding-bottom: 16px;
 }
 
 .missionLogo img {
@@ -681,7 +663,7 @@ li::before {
 	margin: auto;
 }
 
-.missionLogo h1 {
+.missionLogo p {
 	margin: 0 0 20px;
 	text-align: center;
 
@@ -2309,20 +2291,12 @@ h2.inactive {
 
 	/* 481px || Module: Intro swimmer */
 
-	.intro {
-		height: 65vw;
-	}
-
 	.intro h2 {
 		width: 250px;
 	}
 
 	#introBg {
 		height: 200px;
-	}
-
-	.toolkit {
-		top: 38vw;
 	}
 
 	.press .video {
@@ -2361,7 +2335,6 @@ h2.inactive {
 
 	.pictureTab {
 		height: 13px;
-		margin-top: 60px;
 	}
 
 	.bigPictureSection {
@@ -2941,10 +2914,6 @@ h2.inactive {
 
 	/* 769px || Module: Intro swimmer */
 
-	.intro {
-		height: 48vw;
-	}
-
 	.intro h1 {
 		width: 90%;
 
@@ -2956,17 +2925,8 @@ h2.inactive {
 		width: auto;
 	}
 
-	#introBg {
-		height: 300px;
-		top: 80px;
-	}
-
-	#introFg {
-		top: 100px;
-	}
-
-	.toolkit {
-		top: 26vw;
+	.missionLogo {
+		padding-bottom: 32px;
 	}
 
 	/* 769px || Module: Pictures & Info */
@@ -3631,10 +3591,10 @@ h2.inactive {
 	}
 
 	.dadFeetMain {
-		display: block;
+		display: grid;
+		grid-template-columns: 1fr 20px 1fr;
 		width: 700px;
-		height: 1100px;
-		margin: -140px auto 0;
+		margin: 0 auto;
 		overflow-y: hidden;
 	}
 
@@ -3686,7 +3646,6 @@ h2.inactive {
 
 	.dadPartnersButtons {
 		display: inline-block;
-		transform: translate(0, -488px);
 	}
 
 	.dadPartners {
@@ -3937,15 +3896,15 @@ h2.inactive {
 
 	/* 1025px || Module: Intro swimmer */
 
-	.intro {
-		height: 38vw;
+	.missionLogo p {
+		font-size: 2rem;
 	}
 
 	.intro h1 {
 		font-size: 2.25em;
 	}
 
-	.intro h2 {
+	.intro > p {
 		font-size: 1.1em;
 	}
 
@@ -3953,22 +3912,15 @@ h2.inactive {
 		height: 35vw;
 	}
 
-	.toolkit {
-		top: 23vw;
-	}
-
 	.toolkit p {
 		width: 220px;
-		margin-top: 26px;
-		padding: 9px 10px 9px 20px;
-		left: -20px;
+		padding: 16px 12px 16px 20px;
 
 		font-size: 1em;
 	}
 
 	.toolkit div {
-		width: 35%;
-		right: -20px;
+		width: 150px;
 	}
 
 	/* 1025px || Module: Mission Statement */
@@ -4220,10 +4172,12 @@ h2.inactive {
 	}
 
 	.dadFeetMain {
-		display: block;
-		width: 1150px;
+		grid-template-columns: 1fr 20px 1.5fr;
+		width: auto;
+		max-width: 1125px;
 		height: auto;
 		margin: -30px auto 0;
+		padding: 0 24px;
 	}
 
 	/* 1025px || Info */
@@ -4270,22 +4224,8 @@ h2.inactive {
 
 	/* 1025px || Partners */
 
-	.dadPartnersButtons {
-		display: inline-block;
-		transform: translate(0, 30px);
-	}
-
-	.dadPartners {
-		display: inline-block;
-	}
-
-	.dadPartners p {
-		transform: translateX(-305px);
-	}
-
 	.flexPartnersList {
-		width: 750px;
-		max-width: none;
+		width: auto;
 		margin: 10px 0 0;
 
 		justify-content: flex-start;
@@ -4354,8 +4294,6 @@ h2.inactive {
 	.dadPartnersBreak {
 		display: block;
 		width: 400px;
-		margin: 20px auto 25px;
-		transform: translateX(-140px);
 	}
 
 	/* 1025px || Extra Buttons */

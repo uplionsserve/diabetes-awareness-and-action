@@ -53,10 +53,14 @@ export default function () {
 	//Fade in sections
 	function fadeIn() {
 		$("section", ".dadMain").each(function () {
-			var sectionVisible = $(this).offset().top + 100
-			var windowView = $(window).scrollTop() + $(window).height()
+			if ($(this).dataset?.fadein != "false") {
+				var sectionVisible = $(this).offset().top + 100
+				var windowView = $(window).scrollTop() + $(window).height()
 
-			if (sectionVisible < windowView) {
+				if (sectionVisible < windowView) {
+					$(this).addClass("visible")
+				}
+			} else {
 				$(this).addClass("visible")
 			}
 		})

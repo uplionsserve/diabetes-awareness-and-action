@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets"
 import Layout from "../layouts/Layout.astro"
-import daaLogoGlowing from "../assets/branding/logo-daa-color-glowing.svg"
+import daaGlowing from "../assets/branding/emblem-daa-glowing.svg"
 ---
 
 <Layout
@@ -9,36 +9,11 @@ import daaLogoGlowing from "../assets/branding/logo-daa-color-glowing.svg"
 >
 	<section class="intro">
 		<div class="missionLogo">
-			<Image
-				src={daaLogoGlowing}
-				alt="Diabetes Awareness And Action logo"
-			/>
-			<p>DIABETES AWARENESS AND ACTION</p>
+			<Image src={daaGlowing} alt="Diabetes Awareness And Action logo" />
 		</div>
-		<h1>
-			This is way easier than
-			<span class="colorb">Diabetes.</span>
-		</h1>
-		<p>
-			Diabetes never sleeps, and neither do we. We're here for you
-
-			<span class="colorb">24/7</span>.
-		</p>
-		<a
-			href="/diabetes-awareness-and-action/media/awareness/toolkit.pdf"
-			target="_blank"
-			class="toolkit"
-		>
-			<p>Want to take action? Download our free diabetes toolkit.</p>
-			<div>
-				<img
-					src="/diabetes-awareness-and-action/media/awareness/toolkit.png"
-				/>
-			</div>
-		</a>
 	</section>
 
-	<section class="bigPicture">
+	<section class="bigPicture" data-fadein="false">
 		<img
 			class="pictureTab"
 			src="/diabetes-awareness-and-action/media/awareness/pictureTab.svg"
@@ -92,11 +67,11 @@ import daaLogoGlowing from "../assets/branding/logo-daa-color-glowing.svg"
 							><span class="colorb bold1">one minute test</span
 							></a
 						>
-						 will tell you if you are at risk.
+						will tell you if you are at risk.
 					</p>
 				</div>
 			</div>
-			<div class="bigPictureSection">
+			<div class="bigPictureSection bigPictureUP">
 				<div class="bigPictureIcon">
 					<img
 						src="/diabetes-awareness-and-action/media/awareness/bigPicture/local.svg"
@@ -105,8 +80,9 @@ import daaLogoGlowing from "../assets/branding/logo-daa-color-glowing.svg"
 				<div class="bigPictureBox">
 					<div><h1>Local U.P.</h1></div>
 					<p id="localText">
-						1 in 3 adults have prediabetes, and most don’t know it.
-						Do the math, could it be you?
+						<span class="colorb"
+							>1 in 3 adults have prediabetes,</span
+						> and most don’t know it. Do the math, could it be you?
 					</p>
 				</div>
 			</div>
@@ -360,8 +336,8 @@ import daaLogoGlowing from "../assets/branding/logo-daa-color-glowing.svg"
 				diabetes unless he or she takes action to address prediabetes.
 			</p>
 			<h3>
-				<span class="bold1">80,000</span> Yoopers live with prediabetes
-				and don’t know it!
+				<span class="bold1">80,000</span> Yoopers live with prediabetes and
+				don’t know it!
 			</h3>
 		</div>
 		<main class="picturesInfo">

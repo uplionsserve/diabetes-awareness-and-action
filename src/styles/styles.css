@@ -450,18 +450,20 @@ li::before {
 	margin: auto;
 }
 
-.dadMain section {
-	transform: translateY(75px);
+@media (scripting: enabled) {
+	.dadMain section {
+		transform: translateY(75px);
 
-	opacity: 0;
+		opacity: 0;
 
-	transition: 0.5s;
-}
+		transition: 0.5s;
+	}
 
-.dadMain section.visible {
-	transform: translateY(0);
+	.dadMain section.visible {
+		transform: translateY(0);
 
-	opacity: 1;
+		opacity: 1;
+	}
 }
 
 .lightBox {
@@ -659,7 +661,7 @@ li::before {
 
 .missionLogo img {
 	display: block;
-	width: 200px;
+	width: clamp(300px, 70%, 500px);
 	margin: auto;
 }
 
@@ -745,6 +747,7 @@ li::before {
 	position: relative;
 	height: 12px;
 	left: -50px;
+	bottom: -2px;
 }
 
 .bigPicture {
@@ -766,6 +769,11 @@ li::before {
 	padding: 12px 0;
 
 	justify-content: center;
+}
+
+.bigPictureUP {
+	transform: scale(1.2);
+	padding: 40px !important;
 }
 
 .bigPictureIcon {
@@ -3027,14 +3035,6 @@ h2.inactive {
 	}
 
 	/* 769px || Module: Mission Statement */
-
-	.missionLogo img {
-		width: 250px;
-	}
-
-	.missionLogo h1 {
-		font-size: 2em;
-	}
 
 	.mission {
 		display: flex;

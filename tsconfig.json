@@ -4,6 +4,7 @@
 		"jsx": "preserve",
 		"paths": {
 			"@/*": ["./src/*"]
-		}
+		},
+		"types": ["@types/gtag.js"]
 	}
 }

@@ -18,6 +18,18 @@
 	--fontb: Sanchez, serif;
 }
 
+.colord {
+	color: var(--d);
+}
+
+.colorf {
+	color: var(--f);
+}
+
+a.colorf:hover {
+	color: var(--b);
+}
+
 /* | RESET */
 
 html,
